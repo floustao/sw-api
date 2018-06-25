@@ -11,8 +11,7 @@ body {
 
 .box {
   width: 800px;
-  margin: 10% auto;
-  position: relative;
+  margin: 0 auto;
 }
 
 .front.face {

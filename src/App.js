@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import User from './User';
-import Card from './Card';
-
 
 class App extends Component {
   state = {
@@ -32,11 +30,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Quizz game</h1>
+          <h1 className="headings">Quizz game</h1>
         </header>
-
+        <h2 className="headings">Test your Star Wars knowledge</h2>
         <div className="cards">
-          <Card />
         </div>
         <ul className="users">
           {Object.keys(this.state.users).map(key => (
