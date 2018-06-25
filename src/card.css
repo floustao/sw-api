@@ -1,0 +1,99 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background:
+    linear-gradient(217deg, rgba(#F29DAB, .9), rgba(#F29DAB,0) 50%),
+    linear-gradient(107deg, rgba(#DD899E,.9), rgba(#DD899E,0) 70%),
+    linear-gradient(336deg, rgba(#F2CDC1,.9), rgba(#F2CDC1,0) 60%);
+}
+
+.box {
+  width: 800px;
+  margin: 10% auto;
+  position: relative;
+}
+
+.front.face {
+  background: #F9F3E4;
+}
+
+#card-container {
+  position: relative;
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  float: left;
+  perspective: 1000px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#card1, #card2, #card3 {
+  width: 100%;
+  height: 100%;
+  margin: 10%;
+  transform-style: preserve-3d;
+  transition: all .8s linear;
+  box-shadow: 5px 5px 15px rgba(0,0,0, .3);
+}
+
+#card1:hover {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+}
+
+#card2:hover {
+  transform: rotateY(-180deg);
+  box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+}
+
+#card3:hover {
+  transform: rotateX(180deg);
+  box-shadow: 5px -5px 15px rgba(0,0,0, .3);
+}
+
+#card3 .back {
+  transform: rotateX(-180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  opacity: .7;
+  background: #F9F3E4;
+}
+
+h1, p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 1.2em;
+  padding-top: 15px;
+  color: #DD899E;
+}
+
+p {
+  font-size: .5em;
+}
+
+.date {
+  color: #D0B2AF;
+}
+
