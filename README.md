@@ -5,7 +5,7 @@
 
 ## Constraints + Objectives
 
-*3h chrono to create a game using API calls, React, CSS3, Promises*
+*Create a game using API calls, React, CSS3, Promises*
 
 
 ![gif](preview-sw.gif)
